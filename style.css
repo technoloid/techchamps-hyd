@@ -1,0 +1,60 @@
+body{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: cover;
+    
+}
+@media screen and (max-width:600px) {
+    footer {
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .head1 {
+        height: 80vh;
+    }
+
+    footer {
+        position: fixed;
+    }
+    
+  /* Change color of dropdown links on hover */
+  .dropdown-menu  {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+
+
+}
+
+.display-3,
+.display-4 {
+    color: #014aad;
+}
+
+.lead {
+    color: #034d1c;
+}
+
+footer {
+    background-image: linear-gradient(to right, #c9fcda, #94bbfa);
+    width: 100vw;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2.5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* Dropdown Button */
+
+  /* Change color of dropdown links on hover */
+  .dropdown-menu  {background-color: #ededed;
+    width: 300px;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-menu {display: block; } 
+  
