@@ -1,36 +1,67 @@
-body{
+body {
     background-image: url();
     background-repeat: no-repeat;
     background-position: cover;
-    
+
 }
 @media screen and (max-width:600px) {
     footer {
-        position: absolute;
+
     }
+
+    .dropdown-menu {
+
+        transform: translateX(10%);
+        border: 2px solid black;
+        z-index: 10;
+
+    }
+    .powerby {
+        background-image: linear-gradient(to right, #c9fcda, #dbf7e4, #c6dbfd, #94bbfa);
+        border: 1px solid;
+        border-radius: 10px;
+        text-align: center;
+        font-size: small;
+    }
+    .head1{
+
+    }
+
+
 }
 
 @media screen and (min-width:600px) {
     .head1 {
         height: 80vh;
+        
     }
 
     footer {
         position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
-    
-  /* Change color of dropdown links on hover */
-  .dropdown-menu  {
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
+
+    /* Change color of dropdown links on hover */
+    .dropdown-menu {
+
+        transform: translateX(-50%);
+    }
+
+    .powerby {
+        background-image: linear-gradient(to right, #c9fcda, #dbf7e4, #c6dbfd, #94bbfa);
+        border: 1px solid;
+        border-radius: 10px;
+        text-align: center;
+        width: 600px;
+    }
 }
 
-
-}
 
 .display-3,
-.display-4 {
+.display-md-4,
+.display-5 {
     color: #014aad;
 }
 
@@ -44,17 +75,75 @@ footer {
     text-align: center;
     font-family: 'Playfair Display', serif;
     letter-spacing: 2.5px;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
+
 /* Dropdown Button */
 
-  /* Change color of dropdown links on hover */
-  .dropdown-menu  {background-color: #ededed;
+/* Change color of dropdown links on hover */
+.dropdown-menu {
+    background-color: #ffffff;
     width: 300px;
 }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-menu {display: block; } 
-  
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* animation */
+.leftin1{
+    background-color: rgb(255, 255, 255);
+  animation-name: leftin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+.leftin2{
+    background-color: rgb(255, 255, 255);
+  animation-name: leftin;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+.leftin3{
+    background-color: rgb(255, 255, 255);
+  animation-name: leftin;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+}
+@keyframes leftin {
+    from {
+        
+        filter: blur(30px);
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX();
+    }
+}
+.rightin1{
+    background-color: rgb(255, 255, 255);
+  animation-name: rightin;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+.rightin2{
+    background-color: rgb(255, 255, 255);
+  animation-name: rightin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+@keyframes rightin {
+    from {
+       
+        filter: blur(30px);
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX();
+    }
+}
+.dropdown{
+    position: relative;
+    z-index: 1000;
+}
